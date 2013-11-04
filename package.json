@@ -8,6 +8,11 @@
   "devDependencies": {
     "matchdep": "*",
     "grunt": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-exec": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-typescript": "*",
+    "tsd": "*"
   }
 }
