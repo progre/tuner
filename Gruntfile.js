@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         tasks: ['typescript']
       },
       public: {
-        files: ['public/*.*'],
+        files: ['public/**/*.*'],
         options: {
           livereload: true
         }
@@ -72,11 +72,28 @@ module.exports = function(grunt) {
           fullSourceMapPath: true
         }
       }
+    },
+    requirejs: {
+      compile: {
+        options: {
+          name: 'main',
+          baseUrl: 'public/js',
+          out: 'public/js/main.min.js'
+        }
+      }
+    },
+    connect: {
+      server: {
+        options: {
+          base: 'public'
+        }
+      }
     }
   });
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.registerTask('default', [
     'debug-build',
+    'connect',
     'watch'
   ]);
   grunt.registerTask('tsd', [
@@ -90,6 +107,7 @@ module.exports = function(grunt) {
   grunt.registerTask('release-build', [
     'jade:release',
     'stylus',
-    'typescript'
+    'typescript',
+    'requirejs'
   ]);
 };

@@ -1,5 +1,11 @@
 doctype 5
+meta(charset='utf-8')
 title
-link(rel='stylesheet', href='/stylesheets/style.css')
+link(rel='stylesheet', href='css/style.css')
 if debug
-  script(src='http://localhost:35729/livereload.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js', data-main='/js/main')
+else
+  script(src='//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js')
+  script(src='/js/main.min.js')
+if debug
+  script(src='//localhost:35729/livereload.js')

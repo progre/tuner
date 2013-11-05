@@ -2,5 +2,6 @@ node_modules/
 *.js
 *.css
 *.html
+*.map
 
 !Gruntfile.js
