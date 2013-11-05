@@ -5,3 +5,4 @@ node_modules/
 *.map
 
 !Gruntfile.js
+!public/js/requirejs-config.js
