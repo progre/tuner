@@ -78,6 +78,7 @@ module.exports = function(grunt) {
         options: {
           name: 'main',
           baseUrl: 'public/js',
+          mainConfigFile: 'public/js/config.js',
           out: 'public/js/main.min.js'
         }
       }
