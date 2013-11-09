@@ -89,6 +89,21 @@ module.exports = function(grunt) {
           base: 'public'
         }
       }
+    },
+    copy: {
+      deploy: {
+        files: [{
+          expand: true,
+          cwd: 'public/',
+          src: [
+            '**',
+            '!**/*.map', '!js/**/*.js',
+            'js/**/*.min.js'
+          ],
+          dest: 'dist/',
+          filter: 'isFile'
+        }]
+      }
     }
   });
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -96,6 +111,10 @@ module.exports = function(grunt) {
     'debug-build',
     'connect',
     'watch'
+  ]);
+  grunt.registerTask('deploy', [
+    'release-build',
+    'copy'
   ]);
   grunt.registerTask('tsd', [
     'exec:tsd'
