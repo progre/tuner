@@ -76,7 +76,7 @@ module.exports = function(grunt) {
     requirejs: {
       compile: {
         options: {
-          name: 'main',
+          name: 'main.min',
           baseUrl: 'public/js',
           mainConfigFile: 'public/js/config.js',
           out: 'public/js/main.min.js'
