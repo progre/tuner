@@ -103,8 +103,7 @@ module.exports = function(grunt) {
           cwd: 'public/',
           src: [
             '**',
-            '!**/*.map', '!js/**/*.js',
-            'js/main.js'
+            '!**/*.map', '!javascript/**/*.js'
           ],
           dest: 'dist/',
           filter: 'isFile'
