@@ -115,6 +115,9 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.registerTask('default', [
     'debug-build',
+    'serve'
+  ]);
+  grunt.registerTask('serve', [
     'connect:server',
     'watch'
   ]);
