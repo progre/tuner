@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     exec: {
       tsd: {
         cmd: function() {
-          return 'tsd install ' + tsdDependencies.join(' ');
+          return 'tsd install ' + projectConfig.tsdDependencies.join(' ');
         }
       }
     },
