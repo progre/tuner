@@ -20,26 +20,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    watch: {
-      jade: {
-        files: ['src/public/**/*.jade'],
-        tasks: ['jade:debug']
-      },
-      stylus: {
-        files: ['src/public/**/*.styl'],
-        tasks: ['stylus'],
-      },
-      typescript: {
-        files: ['src/public/**/*.ts'],
-        tasks: ['typescript']
-      },
-      public: {
-        files: ['public/**/*.*'],
-        options: {
-          livereload: true
-        }
-      }
-    },
     jade: {
       release: {
         files: jadeFiles
@@ -95,6 +75,26 @@ module.exports = function(grunt) {
         options: {
           base: 'public',
           keepalive: true
+        }
+      }
+    },
+    watch: {
+      jade: {
+        files: ['src/public/**/*.jade'],
+        tasks: ['jade:debug']
+      },
+      stylus: {
+        files: ['src/public/**/*.styl'],
+        tasks: ['stylus'],
+      },
+      typescript: {
+        files: ['src/public/**/*.ts'],
+        tasks: ['typescript']
+      },
+      public: {
+        files: ['public/**/*.*'],
+        options: {
+          livereload: true
         }
       }
     },

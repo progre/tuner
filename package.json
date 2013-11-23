@@ -9,12 +9,12 @@
     "matchdep": "*",
     "grunt": "*",
     "grunt-exec": "*",
-    "grunt-contrib-watch": "*",
     "grunt-contrib-jade": "*",
     "grunt-contrib-stylus": "*",
     "grunt-typescript": "*",
     "grunt-contrib-requirejs": "*",
     "grunt-contrib-connect": "*",
+    "grunt-contrib-watch": "*",
     "grunt-contrib-copy": "*",
     "tsd": "*"
   }
