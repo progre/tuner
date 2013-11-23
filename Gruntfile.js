@@ -118,7 +118,7 @@ module.exports = function(grunt) {
     'connect:server',
     'watch'
   ]);
-  grunt.registerTask('release-server', [
+  grunt.registerTask('release-serve', [
     'release-build',
     'connect:keepalive',
   ]);
