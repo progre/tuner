@@ -6,6 +6,18 @@
   "installed": {
     "jquery/jquery.d.ts": {
       "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
+    },
+    "createjs/createjs.d.ts": {
+      "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
+    },
+    "tweenjs/tweenjs.d.ts": {
+      "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
+    },
+    "easeljs/easeljs.d.ts": {
+      "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
+    },
+    "preloadjs/preloadjs.d.ts": {
+      "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
     }
   }
 }

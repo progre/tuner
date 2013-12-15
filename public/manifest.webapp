@@ -1,0 +1,13 @@
+{
+  "version": "0.1",
+  "name": "Tuner",
+  "description": "Tune your instrumental",
+  "launch_path": "index.html",
+  "icons": {
+    "128": "img/icon-128.png"
+  },
+  "developer": {
+    "name": "progre",
+    "url": "http://www.prgrssv.net"
+  }
+}
