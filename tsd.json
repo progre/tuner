@@ -5,7 +5,7 @@
   "ref": "master",
   "installed": {
     "jquery/jquery.d.ts": {
-      "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
+      "commit": "718eff7763e66a5365018cb6b608290c6425fa10"
     },
     "createjs/createjs.d.ts": {
       "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
@@ -18,6 +18,9 @@
     },
     "preloadjs/preloadjs.d.ts": {
       "commit": "7469c06f428ff7275ade4b48f82d473e8e1eb9a0"
+    },
+    "q/Q.d.ts": {
+      "commit": "718eff7763e66a5365018cb6b608290c6425fa10"
     }
   }
 }

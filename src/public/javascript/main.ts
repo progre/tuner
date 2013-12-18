@@ -1,6 +1,7 @@
 /// <reference path="../../typings/jquery/jquery.d.ts"/>
 /// <reference path="../../typings/easeljs/easeljs.d.ts"/>
 /// <reference path="../../typings/preloadjs/preloadjs.d.ts"/>
+/// <reference path="../../typings/q/Q.d.ts"/>
 /// <reference path="../../typings/linq.d.ts"/>
 import UI = require('./ui/ui');
 
@@ -12,8 +13,14 @@ $(() => {
         var ui = new UI($('main')[0], canvas, loadQueue.getResult('img/blackmamba.png'));
         ui.resize();
         $(window).resize(() => ui.resize());
-
+        var pitch=442;
         ui.init();
+        ui.upButtonTouched = () => {
+            ui.setPitch(++pitch);
+        };
+        ui.downButtonTouched = () => {
+            ui.setPitch(--pitch);
+        };
         createjs.Ticker.timingMode = createjs.Ticker.RAF;
         createjs.Ticker.on('tick', () => {
             ui.update();
