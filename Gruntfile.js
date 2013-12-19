@@ -99,6 +99,12 @@ module.exports = function(grunt) {
         }
       }
     },
+    clean: {
+      options: {
+        force: true
+      },
+      release: ['dist/*']
+    },
     copy: {
       deploy: {
         files: [{
@@ -129,6 +135,7 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('deploy', [
     'release-build',
+    'clean',
     'copy'
   ]);
   grunt.registerTask('tsd-reinstall-o', [
